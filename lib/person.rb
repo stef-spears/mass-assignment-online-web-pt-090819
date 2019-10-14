@@ -6,14 +6,10 @@ class Person
 :weight, :handed, :complexion, :t_shirt_size, 
 :wrist_size, :glove_size, :pant_length, :pant_width
   
-  #def initialize(attributes)
-   # binding.pry
-   # attributes.each { |k, v| self.send(("#{k}"), v) }
-  #end 
-  
   def initialize(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-  end
+   # binding.pry
+    attributes.each { |k, v| self.send(("#{k}="), v) }
+  end 
   
   
 end
